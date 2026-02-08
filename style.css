@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     font-family: "Climate Crisis", sans-serif;
     color: #ffffff;
+    
 }
 
 .intro{
@@ -33,7 +34,7 @@ h1{
     font-size:4rem;
     position: fixed;
     top:5rem;
-    left: 44%;
+    left: 43%;
     z-index: -2;
 }
 
@@ -126,7 +127,8 @@ h2{
 
 .experience{
     padding: 10px;
-    height: 200vh;
+    min-height: 100vh;
+    padding-bottom: 200px;
     background-color: rgb(94, 75, 98);
     color: #000;
     display: flex;
@@ -145,16 +147,43 @@ h2{
     margin-left: 20% ;
     margin-right:20% ;
     border: solid black 4px;
+    transition: all 0.5s;
 }
 
 .experience p:hover{
     color: #fff;
     background-color: #000;
-    transition: all 0.5s
-
-    
+    padding-bottom:80px;
+    transition: all 0.5s;
 }
 
+.projet{
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+}
+
+.hardskills{
+    background-color: #fff;
+    margin: 5%;
+    margin-right:0px ;
+    padding : 2%;
+    width: 10%;
+    border-radius: 20px;
+}
+
+.hardskills li{
+    background-color: orange;
+    margin: 2px;
+}
+
+.projet-liste{
+    background-color: #fff;
+    margin: 5%;
+    padding : 2%;
+    width: 70%;
+    border-radius: 20px;
+}
 /*  
 ///
 */
@@ -167,7 +196,7 @@ h2{
   right: -50%;
   bottom: -50%;
   width: 200%;
-  height: 300vh;
+  height: 800vh;
   background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
   background-repeat: repeat;
   animation: noise-animation .2s infinite;
