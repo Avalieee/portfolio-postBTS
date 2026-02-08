@@ -1,0 +1,190 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body {
+    background-color: #191b1e;
+    overflow-x: hidden;
+    font-family: "Climate Crisis", sans-serif;
+    color: #ffffff;
+}
+
+.intro{
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px;
+    margin-bottom: 25%;
+}
+
+/* #polygon{
+    background-color:red ;
+    height: 100px;
+    width: 100px;
+    clip-path: polygon(50% 0%, 100% 13%, 82% 100%, 5% 99%, 0% 38%);
+} */
+
+h1{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    text-align: center;
+    font-family: "Climate Crisis", sans-serif;
+    font-size:4rem;
+    position: fixed;
+    top:5rem;
+    left: 44%;
+    z-index: -2;
+}
+
+.noise-box{
+    margin-bottom: 100vh;
+}
+
+.content{
+    background-color: #13151a;
+    padding:0px;
+    margin:0px;
+    z-index: 2;
+    height: 100vh;
+}
+
+.intro{
+    padding: 10px;
+}
+
+.formation{
+    height: 100vh;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.timeline{
+    background-color: white;
+    padding: 1px;
+    position: absolute;
+    width: 50%;
+    left:22%;
+    top:207%;
+}
+
+
+h2{
+    font-size: 100px;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    color: #ffffff;
+}
+
+.flex-circle{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle{
+    background-color: white;
+    padding: 5px;
+    border-radius: 100%;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    z-index: 2;
+}
+
+.circle img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.libelle{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#galilee{
+    position: absolute;
+    left:20.7%;
+}
+
+#chataigneraie{
+    position: absolute;
+    left:41.5%;
+}
+
+#cesi{
+    position: absolute;
+    left:64%;
+}
+
+.experience{
+    padding: 10px;
+    height: 200vh;
+    background-color: rgb(94, 75, 98);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience h2{
+    color: #F5ABC4;
+}
+
+.experience p{
+    padding:50px;
+    margin:15px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-left: 20% ;
+    margin-right:20% ;
+    border: solid black 4px;
+}
+
+.experience p:hover{
+    color: #fff;
+    background-color: #000;
+    transition: all 0.5s
+
+    
+}
+
+/*  
+///
+*/
+
+.noise {
+  z-index: -1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 300vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: noise-animation .2s infinite;
+  opacity: .9;
+}
+
+@keyframes noise-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+

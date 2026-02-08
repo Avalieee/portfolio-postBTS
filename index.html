@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="noise">
+    </div>
+    
+    <div class = noise-box>
+        <h1 class="glitch">EMMA</h1>
+    </div>
+
+    <div class="intro">
+        <p>
+            <b>Bonjour !</b> Je suis <b>Emma BOUYER.</b><br>Bienvenue sur mon portfolio !
+        </p>
+        <!-- <div id="polygon"></div> -->
+    </div>
+    <div class="content">
+        <div class = "formation">
+            <h2>Formations</h2>
+            <div class="flex flex-circle">
+                <div class="circle">
+                    <img src="src/galilee.png">
+                </div>
+                <div class="circle">
+                    <img src="src/chataigneraie.png">
+                </div>
+                <div class="circle">
+                    <img src="src/cesi.png">
+                </div>
+                <div class="timeline"></div>
+            </div>
+            <div class="libelle">
+                <p id="galilee">
+                    Bac Générale - 2024 
+                </p>
+                <p id="chataigneraie">
+                    BTS SIO SLAM - 2024 / 2026
+                </p>
+                <p id="cesi">
+                    Admission Cési - 2026 / 2027
+                </p>  
+            </div>  
+        </div>
+        <div class = "experience">
+            <h2>Experiences</h2>
+            <p>
+                Stage seconde année de BTS SIO - Janvier / Février 2026 
+            </p>
+
+            <p>
+                Stage première année de BTS SIO - Juin / Juiller 2025
+            </p>
+
+            <p>
+                2024 Bénévolat au festival du livre de jeunesse
+            </p>
+
+            <p>
+                2022/2024 Responsable de la Cafétéria du lycée
+            </p>
+
+            <p>
+                2023 Lauréate de l’olympiade de Sciences de l’ingénieur
+            </p>
+        </div>
+    </div>   
+
+    <script>
+        $(window).on('load', addNoise);
+
+        function addNoise() {
+        $('.loader').text('Bring in \'da noise!');
+        $('.noise-wrapper').css('opacity',1);
+        }
+    </script>
+</body>
+</html>
