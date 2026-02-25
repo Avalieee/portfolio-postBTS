@@ -10,21 +10,31 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="noise">
-    </div>
-    
-    <div class = noise-box>
-        <h1 class="glitch">EMMA</h1>
-    </div>
+    <div class="container">
+        <div class="noise">
+        </div>
+        
+        <div class = "noise-box slider-bloc">
+            <h1 class="glitch">EMMA</h1>
+        </div>
 
-    <div class="intro">
-        <p>
-            <b>Bonjour !</b> Je suis <b>Emma BOUYER.</b><br>Bienvenue sur mon portfolio !
-        </p>
-        <!-- <div id="polygon"></div> -->
-    </div>
-    <div class="content">
-        <div class = "formation">
+        <div class="intro slider-bloc">
+            <p>
+                <b>Bonjour !</b> Je suis <b>Emma BOUYER.</b><br>Bienvenue sur mon portfolio !
+            </p>
+            <!-- <div id="polygon"></div> -->
+        </div>
+        <div class="intro slider-bloc">
+            <p>
+                Je recherche une alternance pour l'année 2026-2027,<br>pour accompagner mon Bachelor<br>Conceptrice développeuse d'applications au CESI.
+            </p>
+            <p>
+                <br><br><b>Venez me découvrir plus bas</b>
+                <br>↓
+            </p>
+            <!-- <div id="polygon"></div> -->
+        </div>
+        <div class = "formation slider-bloc">
             <h2>Formations</h2>
             <div class="flex flex-circle">
                 <div class="circle">
@@ -36,7 +46,7 @@
                 <div class="circle">
                     <img src="src/cesi.png">
                 </div>
-                <div class="timeline"></div>
+                <!-- <div class="timeline"></div> -->
             </div>
             <div class="libelle">
                 <p id="galilee">
@@ -48,9 +58,37 @@
                 <p id="cesi">
                     Admission CESI - 2026 / 2027
                 </p>  
-            </div>  
+            </div>
+
+            <div id="fleche-formation"></div>   
+
+            <div class="description">
+                <div id="description-galilee">
+                    <p>Lycée Galilée</p>
+                    <p>à Franqueville Saint-Pierre (76) </p>
+                    <p>Obtention du Baccalauréat mention assez bien</p>
+                    <p>avec les options : Mathématiques, Science de l'ingénieur et Numérique et sciences informatiques</p>
+                </div>
+                <div id="description-chataigneraie">
+                    <p>Campus La Châtaigneraie</p>
+                    <p>au Mesnil-Esnard (76) </p>
+                    <p>BTS SIO SLAM - Services informatiques aux organisations option solutions logicielles et applications métiers</p>
+                </div>
+                <div id="description-cesi">
+                    <p>CESI</p>
+                    <p>à Saint-Étienne-du-Rouvray (76)</p>
+                    <p>Bachelor - Concepteur développeur d’applications en alternance</p>
+                </div>
+            </div>
+
+            <div id="date-formation"></div>   
+
+            <div class="formation-button">
+                <button>PRÉCÉDENT</button> 
+                <button>SUIVANT</button> 
+            </div>
         </div>
-        <div class = "experience">
+        <div class = "experience slider-bloc">
             <h2>Experiences</h2>
             <p>
                 Stage seconde année de BTS SIO - Janvier / Février 2026 
@@ -72,33 +110,61 @@
                 2023 Lauréate de l’olympiade de Sciences de l’ingénieur
             </p>
         </div>
-        <div class="projet">
+        <div class="projet slider-bloc">
             <div class="hardskills">
-                <h3>Hardskills</h3> 
-                <img src="src/logo/HTML.png">
-                <img src="src/logo/CSS.png">
-                <img src="src/logo/js.png">
-                <img src="src/logo/python.png">
-                <img src="src/logo/php.png">
-                <img src="src/logo/symfony.png">
-                <img src="src/logo/laravel.png">
-                <img src="src/logo/sql.png">
-                <img src="src/logo/mysql.png">
-                <img src="src/logo/csharp.png">
-                <img src="src/logo/dotnet.png">
-                <img src="src/logo/Dart.png">
-                <img src="src/logo/flutter.png">
-                <img src="src/logo/git.png">
-                <img src="src/logo/GitHub.png">
-                <img src="src/logo/GitLab.png">
-                <img src="src/logo/wordpress.png">
-                <img src="src/logo/elementor.png">
-                <img src="src/logo/woocommerce.png">
+                <!-- <h3>Hardskills</h3>  -->
+                    <div class="logo">
+                    <img src="src/logo/HTML.png">
+                    <img src="src/logo/CSS.png">
+                    <img src="src/logo/js.png">
+                    <img src="src/logo/python.png">
+                    <img src="src/logo/php.png">
+                    <img src="src/logo/symfony.png">
+                    <img src="src/logo/laravel.png">
+                    <img src="src/logo/sql.png">
+                    <img src="src/logo/mysql.png">
+                    <img src="src/logo/csharp.png">
+                    <img src="src/logo/dotnet.png">
+                    <img src="src/logo/Dart.png">
+                    <img src="src/logo/flutter.png">
+                    <img src="src/logo/git.png">
+                    <img src="src/logo/GitHub.png">
+                    <img src="src/logo/GitLab.png">
+                    <img src="src/logo/wordpress.png">
+                    <img src="src/logo/elementor.png">
+                    <img src="src/logo/woocommerce.png">
+                </div>
             </div>
             <div class="projet-liste">
-                <h3>Projet</h3>               
+                <h3>Projet</h3>  
+                <div class="projet-case-list">
+                    <div class="projet-case">
+                        <img>
+                        <h5>TITRE</h5>
+                        <h5>Langages</h5>
+                        <p>blabla</p>
+                    </div> 
+                    <div class="projet-case">
+                        <img>
+                        <h5>TITRE</h5>
+                        <h5>Langages</h5>
+                        <p>blabla</p>
+                    </div> 
+                    <div class="projet-case">
+                        <img>
+                        <h5>TITRE</h5>
+                        <h5>Langages</h5>
+                        <p>blabla</p>
+                    </div>    
+                </div>         
             </div>
         </div>
+        <h2>Résumé HardSkills</h2>
+        <h2>SoftSkills</h2>
+        <div class="hobby">
+            <h2>Centres d'intérêts</h2>
+        </div>
+        <h2>Contact</h2>
     </div>   
 </body>
 </html>

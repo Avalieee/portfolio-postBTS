@@ -4,11 +4,11 @@
 }
 
 body {
-    background-color: #191b1e;
+    background-color: #202328;
     overflow-x: hidden;
     font-family: "Climate Crisis", sans-serif;
     color: #ffffff;
-    
+    overflow: hidden;
 }
 
 .intro{
@@ -18,6 +18,21 @@ body {
     text-align: center;
     margin: 100px;
     margin-bottom: 25%;
+}
+
+.container{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-bloc{
+    scroll-snap-align: center;
 }
 
 /* #polygon{
@@ -42,13 +57,7 @@ h1{
     margin-bottom: 100vh;
 }
 
-.content{
-    background-color: #13151a;
-    padding:0px;
-    margin:0px;
-    z-index: 2;
-    height: 100vh;
-}
+
 
 .intro{
     padding: 10px;
@@ -58,22 +67,42 @@ h1{
     height: 100vh;
     padding-left: 12%;
     padding-right: 12%;
+    background-color: #000;
 }
 
-.timeline{
-    background-color: white;
-    padding: 1px;
-    position: absolute;
-    width: 50%;
-    left:22%;
-    top:207%;
+.formation-button{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
 }
+
+.formation button{
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    border: solid 2px #fff;
+    font-size: medium;
+    padding: 1em 2em 1em 2em;
+    width: 10em;
+}
+
+.formation button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: solid 2px #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* .timeline{
+
+} */
 
 
 h2{
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 6%;
     padding-bottom: 5%;
     color: #ffffff;
 }
@@ -85,7 +114,8 @@ h2{
 
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:4rem;
 }
 
 .circle{
@@ -100,10 +130,54 @@ h2{
 }
 
 .circle img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 100%;
 }
+
+.description{
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2.5%;
+    margin-top:-10px;
+    margin-bottom: 2%;
+}
+
+#description-chataigneraie{
+    display: none;
+}
+
+#description-cesi{
+    display: none;
+}
+
+#fleche-formation{
+    margin-left: 26%;
+    /* margin-left: 49%;
+    margin-left: 72%; */
+    margin-top:-20px;
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 15px solid transparent;
+    border-bottom : 25px solid rgb(255, 255, 255);
+    border-left : 15px solid transparent;
+}
+
+#date-formation{
+    padding:2%;
+    background-color: white;
+    border: #000 4px solid;
+    border-radius: 20px;
+    margin-left: 80%;
+    margin-right: 11%;
+    margin-top: -12%;
+    margin-bottom: 9%;
+}
+
 
 .libelle{
     margin-top: 50px;
@@ -129,14 +203,14 @@ h2{
     padding: 10px;
     min-height: 100vh;
     padding-bottom: 200px;
-    background-color: rgb(94, 75, 98);
+    background-color: rgb(85, 65, 88);
     color: #000;
     display: flex;
     flex-direction: column;
 }
 
 .experience h2{
-    color: #F5ABC4;
+    color: #fff;
 }
 
 .experience p{
@@ -182,11 +256,17 @@ h2{
     text-align: center;
     height: 540px;
     transition: all 0.4s;
+    overflow-y: auto;
+}
+
+.hardskills::-webkit-scrollbar{
+    display: none;
 }
 
 .hardskills:hover{
     width: 50%;
     transition: all 1s;
+    
 }
 
 .hardskills img{
@@ -202,6 +282,21 @@ h2{
     scale : 1.1;
 }
 
+.logo{
+    animation: slide 50s linear infinite;
+}
+
+/*
+.logo:hover{
+    animation-play-state: paused;
+}
+*/
+
+@keyframes slide  {
+  from{transform: translatey(100%);}
+  to{transform: translatey(-100%); }
+}
+
 .projet-liste{
     background-color: #fff;
     margin: 5%;
@@ -210,6 +305,24 @@ h2{
     border-radius: 20px;
     box-shadow: inset 0px 0px 3px black;
 }
+
+.projet-case-list{
+    display:flex;
+    justify-content: center;
+    gap: 4%;
+}
+
+.projet-case{
+    border: #000 solid 1px;
+    width: 28%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 25px;
+}
+
 /*  
 ///
 */
@@ -243,3 +356,8 @@ h2{
     100% { transform: translate(5%,0) }
 }
 
+.hobby{
+    background-color: white;
+    height: 80vh;
+    width: 100vw;
+}
