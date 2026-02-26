@@ -100,7 +100,7 @@ h1{
 
 
 h2{
-    font-size: 80px;
+    font-size: 4rem;
     text-align: center;
     padding-top: 6%;
     padding-bottom: 5%;
@@ -130,8 +130,8 @@ h2{
 }
 
 .circle img{
-    width: 180px;
-    height: 180px;
+    width: 10em;
+    height: 10em;
     border-radius: 100%;
 }
 
@@ -168,14 +168,15 @@ h2{
 }
 
 #date-formation{
-    padding:2%;
+    padding:1%;
     background-color: white;
     border: #000 4px solid;
     border-radius: 20px;
-    margin-left: 80%;
-    margin-right: 11%;
+    margin-left: 79%;
     margin-top: -12%;
     margin-bottom: 9%;
+    width: 80px;
+    color: #000;
 }
 
 
@@ -213,7 +214,7 @@ h2{
     color: #fff;
 }
 
-.experience p{
+.experience .experience-content{
     padding:50px;
     margin:15px;
     background-color: #fff;
@@ -224,7 +225,11 @@ h2{
     transition: all 0.5s;
 }
 
-.experience p:hover{
+/* .experience p.langage{
+    display: none;
+} */
+
+.experience .experience-content:hover{
     color: #fff;
     background-color: #000;
     padding-bottom:80px;
