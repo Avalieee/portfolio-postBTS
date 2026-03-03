@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #202328;
+    background-color: #1a1819;
     overflow-x: hidden;
     font-family: "Climate Crisis", sans-serif;
     color: #ffffff;
@@ -204,7 +204,7 @@ h2{
     padding: 10px;
     min-height: 100vh;
     padding-bottom: 200px;
-    background-color: rgb(85, 65, 88);
+    background-color: #94807a;
     color: #000;
     display: flex;
     flex-direction: column;
@@ -240,6 +240,8 @@ h2{
     display: flex;
     justify-content: space-around;
     color: #000;
+    height: 100vh;
+    padding-top:28px ;
 }
 
 .projet h3{
@@ -250,8 +252,6 @@ h2{
 
 .hardskills{
     background-color: #fff;
-    margin: 5%;
-    margin-right:0px ;
     padding : 2%;
     width: 8%;
     border-radius: 20px;
@@ -259,7 +259,7 @@ h2{
     transition: all 0.2s;
     list-style-type: none;
     text-align: center;
-    height: 540px;
+    height: 85vh;
     transition: all 0.4s;
     overflow-y: auto;
 }
@@ -268,16 +268,14 @@ h2{
     display: none;
 }
 
-.hardskills:hover{
+/* .hardskills:hover{
     width: 50%;
-    transition: all 1s;
-    
-}
+    transition: all 1s; 
+} */
 
 .hardskills img{
     margin: 2px;
     width: 80px;
-    margin-bottom: 15px;
     transition: all 1s;
 }
 
@@ -288,7 +286,7 @@ h2{
 }
 
 .logo{
-    animation: slide 50s linear infinite;
+    animation: slide 40s linear infinite;
 }
 
 /*
@@ -298,36 +296,125 @@ h2{
 */
 
 @keyframes slide  {
-  from{transform: translatey(100%);}
+  from{transform: translatey(0%);}
   to{transform: translatey(-100%); }
 }
 
 .projet-liste{
     background-color: #fff;
-    margin: 5%;
     padding : 2%;
     width: 75%;
+    height: 85vh;
     border-radius: 20px;
     box-shadow: inset 0px 0px 3px black;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.projet-liste::-webkit-scrollbar{
+    display: none;
 }
 
 .projet-case-list{
     display:flex;
-    justify-content: center;
-    gap: 4%;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
 }
 
 .projet-case{
-    border: #000 solid 1px;
-    width: 28%;
-    min-height: 200px;
+    width: 29%;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     border-radius: 25px;
+    font-size: small;
+    padding: 1.5%;
+    transition: all 1s;
+    margin-bottom: 1%;
 }
 
+.projet-case img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 4%;
+}
+
+.projet-case:hover{
+    scale: 1.05;
+    /* box-shadow: #000 10px; */
+    transition: all 0.6s;
+}
+
+.project-language{
+    display: flex;
+    gap:3px;
+}
+.project-language p{
+    border-radius: 10px;
+    padding: 2px;
+    opacity: 0.75;
+}
+
+.project-language p:hover{
+    opacity: 1;
+}
+
+#projet-case-portfolio{
+    background-color: #000;
+    color: #fff;
+}
+
+#projet-case-pawtisserie{
+    /* background-image: linear-gradient(90deg, #ffffff 5.36%, #ffdae0 5.36%, #ffdae0 50%, #ffffff 50%, #ffffff 55.36%, pink 55.36%, pink 100%);
+    background-size: 56.00px 56.00px; 
+    border: 6px #ffffff solid;*/
+    background-color: #ffdae0;
+}
+
+#projet-case-todolist{
+    background-color: #d9b5e3;
+}
+
+#projet-case-tacotac{
+    background-color: #ff8335;
+}
+
+#projet-case-cybernews{
+    background-color: #ffb1cf;
+}
+
+.html{
+    background-color: #ffb75f;
+    color: #c57300;
+}
+
+.css{
+    background-color: #7abfff;
+    color: #118cff;
+}
+
+.php{
+    background-color: #b476ef;
+    color: #7c39bb;
+}
+
+.js{
+    background-color: #f4e49c;
+    color: #ffbf00;
+}
+
+.sql{
+    background-color: #657fff;
+    color: #2745db;
+}
+
+.mysql{
+    background-color: #ffb75f;
+    color: #3271ad;
+}
 /*  
 ///
 */
@@ -361,8 +448,30 @@ h2{
     100% { transform: translate(5%,0) }
 }
 
+.summary-hardskills{
+    height: 100vh;
+}
+
+.summary-hardskills h2{
+    background-color: #94807a;
+}
+
+.certifications{
+    height: 80vh;
+    background-color: #9b4a76;
+}
+
+.softkills{
+    height: 100vh;
+}
+
 .hobby{
-    background-color: white;
+    background-color: #94807a;
     height: 80vh;
     width: 100vw;
+}
+
+
+.contact{
+    height: 100vh;
 }
